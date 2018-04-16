@@ -54,14 +54,18 @@ namespace Plutos
             {
                 Sidebar.Width = 70;
                 sidebarmaxed = false;
-                ViewButton.HorizontalAlignment = HorizontalAlignment.Stretch;
             }
             else
             {
                 Sidebar.Width = 200;
                 sidebarmaxed = true;
-                ViewButton.HorizontalAlignment = HorizontalAlignment.Right;
             }
+        }
+
+        private void Tap(object sender, TappedRoutedEventArgs e) 
+        {
+            StackPanel stack = sender as StackPanel;
+            MainFrame.Content = stack.Name;
         }
     }
 }

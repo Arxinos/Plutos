@@ -12,38 +12,30 @@
     <RelativePanel x:Name="Plutos" Background="White">
         <StackPanel x:Name="Sidebar" MinWidth="70" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignBottomWithPanel="True" Background="#333333" Width="70">
             <Grid x:Name="IconGrid" Height="170" Background="{x:Null}" RenderTransformOrigin="0.5,0.5">
-                <Button x:Name="ViewButton"  Height="60" HorizontalAlignment="Stretch" Background="#333333" VerticalAlignment="Top" Click="ChangeMode">
-                    <Image Source="Assets/menu.png" Height="40" Width="40"/>
+                <Button x:Name="ViewButton"  Height="60" HorizontalAlignment="Left" Margin="10,0,0,0" Background="#333333" VerticalAlignment="Top" Click="ChangeMode">
+                    <Image Source="Assets/menu.png" Height="30" Width="30"/>
                 </Button>
                 <Image Source="Assets/Microsoft.jpg"  HorizontalAlignment="Center" Margin="0,40,0,0" Height="50" Width="50" />
             </Grid>
             <ListView x:Name="ListViewMenu" Foreground="#FF5C99D6"  Background="{x:Null}" ScrollViewer.HorizontalScrollBarVisibility="Disabled" BorderBrush="#333333" FontSize="14">
-                <ListViewItem x:Name="ItemHome" Height="60">
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Assets/CompanyIcon.png" Margin="3"  HorizontalAlignment="Center" Height="40" Width="40" />
-                        <TextBlock Text="Company" VerticalAlignment="Center" Margin="20 10" Foreground="White"/>
-                    </StackPanel>
-                </ListViewItem>
-                <ListViewItem x:Name="Account" Height="60">
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Assets/Accounts.png"  Margin="3" HorizontalAlignment="Center" Height="40" Width="40" />
-                        <TextBlock Text="Account" VerticalAlignment="Center" Margin="20 10" Foreground="White"/>
-                    </StackPanel>
-                </ListViewItem>
-                <ListViewItem Height="60">
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Assets/Booking.png"   Margin="3" HorizontalAlignment="Center" Height="40" Width="40" />
-                        <TextBlock Text="Booking" VerticalAlignment="Center"  Margin="20 10" Foreground="White"/>
-                    </StackPanel>
-                </ListViewItem>
-                <ListViewItem Height="60">
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Assets/Settings.png"  Margin="3" HorizontalAlignment="Center" Height="40" Width="40" />
-                        <TextBlock Text="Settings" VerticalAlignment="Center"  Margin="20 10" Foreground="White"/>
-                    </StackPanel>
-                </ListViewItem>
+                <StackPanel x:Name="Company" Orientation="Horizontal" Tapped="Tap">
+                    <Image Source="Assets/CompanyIcon.png" Margin="3"  HorizontalAlignment="Center" Height="40" Width="40" />
+                    <TextBlock Text="Company" VerticalAlignment="Center" Margin="20 10" Foreground="White"/>
+                </StackPanel>
+                <StackPanel x:Name="Accounts" Tapped="Tap" Orientation="Horizontal">
+                    <Image Source="Assets/Accounts.png"  Margin="3" HorizontalAlignment="Center" Height="40" Width="40" />
+                    <TextBlock Text="Account" VerticalAlignment="Center" Margin="20 10" Foreground="White"/>
+                </StackPanel>
+                <StackPanel x:Name="Booking" Tapped="Tap" Orientation="Horizontal">
+                    <Image Source="Assets/Booking.png"   Margin="3" HorizontalAlignment="Center" Height="40" Width="40" />
+                    <TextBlock Text="Booking" VerticalAlignment="Center"  Margin="20 10" Foreground="White"/>
+                </StackPanel>
+                <StackPanel x:Name="Settings" Tapped="Tap" Orientation="Horizontal">
+                    <Image Source="Assets/Settings.png"  Margin="3" HorizontalAlignment="Center" Height="40" Width="40" />
+                    <TextBlock Text="Settings" VerticalAlignment="Center"  Margin="20 10" Foreground="White"/>
+                </StackPanel>
             </ListView>
         </StackPanel>
-        <Frame x:Name="MainFrame" Content="Servus" RelativePanel.RightOf="Sidebar" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignBottomWithPanel="True" Background="Blue"></Frame>
+        <Frame x:Name="MainFrame" RelativePanel.RightOf="Sidebar" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignBottomWithPanel="True" Background="White"></Frame>
     </RelativePanel>
 </Page>
