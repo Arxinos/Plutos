@@ -1,0 +1,37 @@
+﻿<Page
+    x:Class="Plutos.Single_Entry_Accounting.SE_Booking"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Plutos.Single_Entry_Accounting"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Pivot x:Name="rootPivot" Title="Booking">
+            <PivotItem Header="Booking">
+                <RelativePanel>
+                    <ComboBox x:Uid="/SE_Booking/Type" Name="TypeCB" Margin="100,50,0,0" SelectedItem="Income" SelectionChanged="TransactionTypeChanged">
+                        <ComboBoxItem x:Uid="/SE_Booking/Type1"/>
+                        <ComboBoxItem x:Uid="/SE_Booking/Type2"/>
+                    </ComboBox>
+                    <TextBox x:Uid="/SE_Booking/Amount" Name="AmountTB" RelativePanel.Below="TypeCB" Margin="100,50,0,0"/>
+                    <TextBox x:Uid="/SE_Booking/Description" Name="DescrTB" RelativePanel.Below="AmountTB" Margin="100,50,0,0"/>
+                    <ComboBox x:Uid="/SE_Booking/Tax" Name="TaxCB" RelativePanel.Below="DescrTB" Margin="100,50,0,0" SelectedIndex="2">
+                        <ComboBoxItem Content="10%" />
+                        <ComboBoxItem Content="13%" />
+                        <ComboBoxItem Content="20%" />
+                    </ComboBox>
+                    
+                    <ComboBox x:Uid="ExpenseType" x:Name="ExpenseTypeCB" Margin="100,50,0,0" RelativePanel.Below="TaxCB" />
+                    <Button x:Uid="/SE_Booking/Confirm" RelativePanel.Below="ExpenseTypeCB" Margin="100,50" Click="CreateTransaction"  />
+                    
+                </RelativePanel>
+            </PivotItem>
+            <PivotItem Header="History">
+
+            </PivotItem>
+        </Pivot>
+    </Grid>
+</Page>

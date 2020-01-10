@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="de" original="PLUTOS/STRINGS/EN-US/DASHBOARD.RESW" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.6901.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="PLUTOS/STRINGS/EN-US/DASHBOARD.RESW" datatype="resx">
+        <trans-unit id="NewCompanyButton.Content" translate="yes" xml:space="preserve">
+          <source>New Company</source>
+          <target state="new">New Company</target>
+        </trans-unit>
+        <trans-unit id="SelectCompany.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Select Company</source>
+          <target state="new">Select Company</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+  <file datatype="xml" source-language="en-US" target-language="de" original="PLUTOS/STRINGS/EN-US/MAINPAGE.RESW" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.6901.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="PLUTOS/STRINGS/EN-US/MAINPAGE.RESW" datatype="resx">
+        <trans-unit id="Accounts.Text" translate="yes" xml:space="preserve">
+          <source>Accounts</source>
+          <target state="new">Accounts</target>
+        </trans-unit>
+        <trans-unit id="Booking.Text" translate="yes" xml:space="preserve">
+          <source>Booking</source>
+          <target state="new">Booking</target>
+        </trans-unit>
+        <trans-unit id="Customers.Text" translate="yes" xml:space="preserve">
+          <source>Customers</source>
+          <target state="new">Customers</target>
+        </trans-unit>
+        <trans-unit id="Dashboard.Text" translate="yes" xml:space="preserve">
+          <source>Dashboard</source>
+          <target state="new">Dashboard</target>
+        </trans-unit>
+        <trans-unit id="Settings.Text" translate="yes" xml:space="preserve">
+          <source>Settings</source>
+          <target state="new">Settings</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+  <file datatype="xml" source-language="en-US" target-language="de" original="PLUTOS/STRINGS/EN-US/LOGIN.RESW" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.6901.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="PLUTOS/STRINGS/EN-US/LOGIN.RESW" datatype="resx">
+        <trans-unit id="EMail.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>E-Mail</source>
+          <target state="new">E-Mail</target>
+        </trans-unit>
+        <trans-unit id="Language.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>English</source>
+          <target state="new">English</target>
+        </trans-unit>
+        <trans-unit id="Login.Text" translate="yes" xml:space="preserve">
+          <source>Login</source>
+          <target state="new">Login</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Login Header</note>
+        </trans-unit>
+        <trans-unit id="LoginButton.Content" translate="yes" xml:space="preserve">
+          <source>Login</source>
+          <target state="new">Login</target>
+        </trans-unit>
+        <trans-unit id="NoAccount.Text" translate="yes" xml:space="preserve">
+          <source>Don't have an account?</source>
+          <target state="new">Don't have an account?</target>
+        </trans-unit>
+        <trans-unit id="Password.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Password</source>
+          <target state="new">Password</target>
+        </trans-unit>
+        <trans-unit id="Register.Text" translate="yes" xml:space="preserve">
+          <source>Register Now!</source>
+          <target state="new">Register Now!</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+  <file datatype="xml" source-language="en-US" target-language="de" original="PLUTOS/STRINGS/EN-US/COMPANYSETUP.RESW" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.6901.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="PLUTOS/STRINGS/EN-US/COMPANYSETUP.RESW" datatype="resx">
+        <trans-unit id="BasicInfo.Text" translate="yes" xml:space="preserve">
+          <source>Allgemeines</source>
+          <target state="new">Allgemeines</target>
+        </trans-unit>
+        <trans-unit id="BookingMode.Header" translate="yes" xml:space="preserve">
+          <source>Buchungsart</source>
+          <target state="new">Buchungsart</target>
+        </trans-unit>
+        <trans-unit id="BookingMode.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Bitte wählen Sie ihre Buchungsart</source>
+          <target state="new">Bitte wählen Sie ihre Buchungsart</target>
+        </trans-unit>
+        <trans-unit id="CompanyName.Header" translate="yes" xml:space="preserve">
+          <source>Firmenname</source>
+          <target state="new">Firmenname</target>
+        </trans-unit>
+        <trans-unit id="CompanyName.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Bitte geben Sie Ihren Firmennamen ein</source>
+          <target state="new">Bitte geben Sie Ihren Firmennamen ein</target>
+        </trans-unit>
+        <trans-unit id="CompanyType.Header" translate="yes" xml:space="preserve">
+          <source>Rechtsform</source>
+          <target state="new">Rechtsform</target>
+        </trans-unit>
+        <trans-unit id="CompanyType.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Bitte wählen Sie Ihre Rechtsform</source>
+          <target state="new">Bitte wählen Sie Ihre Rechtsform</target>
+        </trans-unit>
+        <trans-unit id="Mode1.Content" translate="yes" xml:space="preserve">
+          <source>Anfänger</source>
+          <target state="new">Anfänger</target>
+        </trans-unit>
+        <trans-unit id="Mode2.Content" translate="yes" xml:space="preserve">
+          <source>Fortgeschritten</source>
+          <target state="new">Fortgeschritten</target>
+        </trans-unit>
+        <trans-unit id="StandardAccounts.Text" translate="yes" xml:space="preserve">
+          <source>Standardkonten</source>
+          <target state="new">Standardkonten</target>
+        </trans-unit>
+        <trans-unit id="Type1.Content" translate="yes" xml:space="preserve">
+          <source>Einzelunternehmen</source>
+          <target state="new">Einzelunternehmen</target>
+        </trans-unit>
+        <trans-unit id="Type2.Content" translate="yes" xml:space="preserve">
+          <source>Offene Gesellschaft</source>
+          <target state="new">Offene Gesellschaft</target>
+        </trans-unit>
+        <trans-unit id="Amount.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Betrag</source>
+          <target state="new">Betrag</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+  <file datatype="xml" source-language="en-US" target-language="de" original="PLUTOS/STRINGS/EN-US/REGISTER.RESW" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.6901.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="PLUTOS/STRINGS/EN-US/REGISTER.RESW" datatype="resx">
+        <trans-unit id="ConfirmPassword.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Confirm Password</source>
+          <target state="new">Confirm Password</target>
+        </trans-unit>
+        <trans-unit id="EMail.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>E-Mail</source>
+          <target state="new">E-Mail</target>
+        </trans-unit>
+        <trans-unit id="Password.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Password</source>
+          <target state="new">Password</target>
+        </trans-unit>
+        <trans-unit id="Register.Text" translate="yes" xml:space="preserve">
+          <source>Register</source>
+          <target state="new">Register</target>
+        </trans-unit>
+        <trans-unit id="RegisterButton.Content" translate="yes" xml:space="preserve">
+          <source>Register</source>
+          <target state="new">Register</target>
+        </trans-unit>
+        <trans-unit id="SecurityAnswer.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Answer to Question</source>
+          <target state="new">Answer to Question</target>
+        </trans-unit>
+        <trans-unit id="SecurityQuestion.Header" translate="yes" xml:space="preserve">
+          <source>Security Question</source>
+          <target state="new">Security Question</target>
+        </trans-unit>
+        <trans-unit id="SecurityQuestion.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Select Security Question</source>
+          <target state="new">Select Security Question</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+  <file datatype="xml" source-language="en-US" target-language="de" original="PLUTOS/STRINGS/EN-US/ACCOUNTS.RESW" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.6901.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="PLUTOS/STRINGS/EN-US/ACCOUNTS.RESW" datatype="resx">
+        <trans-unit id="Accounts.Header" translate="yes" xml:space="preserve">
+          <source>Accounts</source>
+          <target state="new">Accounts</target>
+        </trans-unit>
+        <trans-unit id="AddAccount.Header" translate="yes" xml:space="preserve">
+          <source>Add Account</source>
+          <target state="new">Add Account</target>
+        </trans-unit>
+        <trans-unit id="AddAccountButton.Content" translate="yes" xml:space="preserve">
+          <source>Add Account</source>
+          <target state="new">Add Account</target>
+        </trans-unit>
+        <trans-unit id="Amount.Text" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+          <target state="new">Amount</target>
+        </trans-unit>
+        <trans-unit id="DeleteButton.Content" translate="yes" xml:space="preserve">
+          <source>Delete</source>
+          <target state="new">Delete</target>
+        </trans-unit>
+        <trans-unit id="Description.Text" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="new">Description</target>
+        </trans-unit>
+        <trans-unit id="EditButton.Content" translate="yes" xml:space="preserve">
+          <source>Edit</source>
+          <target state="new">Edit</target>
+        </trans-unit>
+        <trans-unit id="Name.Text" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <target state="new">Name</target>
+        </trans-unit>
+        <trans-unit id="PageHeader.Title" translate="yes" xml:space="preserve">
+          <source>Accounts</source>
+          <target state="new">Accounts</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+  <file datatype="xml" source-language="en-US" target-language="de" original="PLUTOS/STRINGS/EN-US/CUSTOMERS.RESW" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.6901.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="PLUTOS/STRINGS/EN-US/CUSTOMERS.RESW" datatype="resx">
+        <trans-unit id="AddCustomer.Header" translate="yes" xml:space="preserve">
+          <source>Add Customer</source>
+          <target state="new">Add Customer</target>
+        </trans-unit>
+        <trans-unit id="AddPictureButton.Content" translate="yes" xml:space="preserve">
+          <source>Add Picture</source>
+          <target state="new">Add Picture</target>
+        </trans-unit>
+        <trans-unit id="Adress.Text" translate="yes" xml:space="preserve">
+          <source>Adress</source>
+          <target state="new">Adress</target>
+        </trans-unit>
+        <trans-unit id="BasicInfo.Text" translate="yes" xml:space="preserve">
+          <source>Basic Info</source>
+          <target state="new">Basic Info</target>
+        </trans-unit>
+        <trans-unit id="City.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>City</source>
+          <target state="new">City</target>
+        </trans-unit>
+        <trans-unit id="Contact.Text" translate="yes" xml:space="preserve">
+          <source>Contact</source>
+          <target state="new">Contact</target>
+        </trans-unit>
+        <trans-unit id="Country.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Country</source>
+          <target state="new">Country</target>
+        </trans-unit>
+        <trans-unit id="CreateCustomerButton.Content" translate="yes" xml:space="preserve">
+          <source>Create Customer</source>
+          <target state="new">Create Customer</target>
+        </trans-unit>
+        <trans-unit id="DatePicker.Header" translate="yes" xml:space="preserve">
+          <source>Date of Birth</source>
+          <target state="new">Date of Birth</target>
+        </trans-unit>
+        <trans-unit id="DeleteButton.Content" translate="yes" xml:space="preserve">
+          <source>Delete</source>
+          <target state="new">Delete</target>
+        </trans-unit>
+        <trans-unit id="EditButton.Content" translate="yes" xml:space="preserve">
+          <source>Edit</source>
+          <target state="new">Edit</target>
+        </trans-unit>
+        <trans-unit id="Email.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>E-Mail</source>
+          <target state="new">E-Mail</target>
+        </trans-unit>
+        <trans-unit id="FirstName.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>First Name*</source>
+          <target state="new">First Name*</target>
+        </trans-unit>
+        <trans-unit id="Info.Text" translate="yes" xml:space="preserve">
+          <source>*Only the first and last name are required, everything else is optinal</source>
+          <target state="new">*Only the first and last name are required, everything else is optinal</target>
+        </trans-unit>
+        <trans-unit id="LastName.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Last Name*</source>
+          <target state="new">Last Name*</target>
+        </trans-unit>
+        <trans-unit id="PageTitle.Title" translate="yes" xml:space="preserve">
+          <source>Customers</source>
+          <target state="new">Customers</target>
+        </trans-unit>
+        <trans-unit id="Phone.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Phone Number</source>
+          <target state="new">Phone Number</target>
+        </trans-unit>
+        <trans-unit id="Street.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Street</source>
+          <target state="new">Street</target>
+        </trans-unit>
+        <trans-unit id="ViewCustomers.Header" translate="yes" xml:space="preserve">
+          <source>View Customers</source>
+          <target state="new">View Customers</target>
+        </trans-unit>
+        <trans-unit id="ZipCode.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Zip Code</source>
+          <target state="new">Zip Code</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+  <file datatype="xml" source-language="en-US" target-language="de" original="PLUTOS/STRINGS/EN-US/SE_BOOKING.RESW" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.6901.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="PLUTOS/STRINGS/EN-US/SE_BOOKING.RESW" datatype="resx">
+        <trans-unit id="Amount.Header" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+          <target state="new">Amount</target>
+        </trans-unit>
+        <trans-unit id="Amount.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Please enter an amount</source>
+          <target state="new">Please enter an amount</target>
+        </trans-unit>
+        <trans-unit id="Confirm.Content" translate="yes" xml:space="preserve">
+          <source>Confirm </source>
+          <target state="new">Confirm </target>
+        </trans-unit>
+        <trans-unit id="Description.Header" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="new">Description</target>
+        </trans-unit>
+        <trans-unit id="Description.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Please enter a description</source>
+          <target state="new">Please enter a description</target>
+        </trans-unit>
+        <trans-unit id="ExpenseType.Header" translate="yes" xml:space="preserve">
+          <source>Type of Expense</source>
+          <target state="new">Type of Expense</target>
+        </trans-unit>
+        <trans-unit id="Type.Header" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <target state="new">Type</target>
+        </trans-unit>
+        <trans-unit id="Type1.Content" translate="yes" xml:space="preserve">
+          <source>Income</source>
+          <target state="new">Income</target>
+        </trans-unit>
+        <trans-unit id="Type2.Content" translate="yes" xml:space="preserve">
+          <source>Expense</source>
+          <target state="new">Expense</target>
+        </trans-unit>
+        <trans-unit id="Tax.Header" translate="yes" xml:space="preserve">
+          <source>Tax</source>
+          <target state="new">Tax</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

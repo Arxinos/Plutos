@@ -1,0 +1,77 @@
+﻿<Page
+    x:Class="Plutos.Booking"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Plutos"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Loading="LoadHistory">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Pivot x:Name="rootPivot" Title="Booking">
+            <PivotItem Header="Income">
+                <RelativePanel x:Name="IncomeRP">
+                    <ComboBox x:Name="incomeTypeCB" Header="Income Type" PlaceholderText="Select Income Type" RelativePanel.AlignTopWithPanel="True" Margin="0,0,0,10" SelectionChanged="IncomeTypeChanged" />
+                    <ComboBox x:Name="customerBox" Header="Customer" Margin="0,0,20,10" PlaceholderText="Customer" RelativePanel.Below="incomeTypeCB"/>
+                    <ComboBox x:Name="Income_Account_ComboBox" Header="Income Account" Margin="0,0,0,10" PlaceholderText="Income Account" RelativePanel.RightOf="customerBox" RelativePanel.Below="incomeTypeCB"/>
+                    <TextBox x:Name="amountTxtBx" PlaceholderText="Please enter an amount" RelativePanel.Below="Income_Account_ComboBox" Margin="0,10,0,20"/>
+                    <Button Tag="Income" x:Name="transactionBtn" Content="Confirm" RelativePanel.Below="amountTxtBx" Margin="0,0,0,20" Click="CreateTransaction"/>
+                    <DatePicker x:Name="datePicker" Visibility="Collapsed"/>
+                    <ComboBox x:Name="paymentPerionCB"  Visibility="Collapsed"/>
+                    <!-- x:DeferLoadStrategy="Lazy"-->
+                </RelativePanel>
+            </PivotItem>
+            <PivotItem Header="Expenses">
+                <RelativePanel>
+                    <ComboBox  x:Name="recipientBox" Margin="20,0,0,0" Header="Recipient" PlaceholderText="Choose Recipient" />
+                    <ComboBox x:Name="Expenses_Account_ComboBox" RelativePanel.RightOf="recipientBox" Header="Charged Account" Margin="20,0,0,0" PlaceholderText="Choose Charged Account" />
+                    <DatePicker x:Name="ExpenseDate" RelativePanel.Below="recipientBox" Margin="20,0,0,0" Header="Date of transaction"/>
+                    <Button x:Name="Expense_AddButton" Margin="20,140,0,0" Width="80" Content="Add" HorizontalAlignment="Stretch"/>
+                    <Button x:Name="Expense_DeleteButton" Margin="120,140" Width="80" Content="Delete" HorizontalAlignment="Stretch"/>
+                    <Button x:Name="Expense_TransactionButton" Margin="220,140,0,0" Content="Start Transaction"/>
+                    <StackPanel Margin="20,180,0,0">
+                        <Grid x:Name="MainGrid1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100" />
+                                <ColumnDefinition Width="300" />
+                                <ColumnDefinition Width="100" />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="Name"/>
+                            <TextBlock Grid.Column="1" Text="Description"/>
+                            <TextBlock Grid.Column="2" Text="Amount"/>
+                            <Rectangle Grid.Column="0" HorizontalAlignment="Right" Width="4"/>
+                        </Grid>
+                        <GridView x:Name="Expense_AccountList" Height="300" Width="600" SelectionMode="None">
+                            
+                        </GridView>
+                    </StackPanel>
+                </RelativePanel>
+            </PivotItem>
+            <PivotItem Header="Investment">
+                <!--Pivot content goes here-->
+                <TextBlock Text="Content of pivot item 3."/>
+            </PivotItem>
+            <PivotItem Header="History">
+                <RelativePanel>
+                    <GridView x:Name="MainGridView" Margin="20" ItemsSource="{x:Bind entrys_}">
+                        <GridView.ItemTemplate>
+                            <DataTemplate x:DataType="local:HistoryEntry">
+                                <Grid MinWidth="270">
+                                    <TextBlock Text="{x:Bind bookdate}" FontSize="15" Margin="10,0" HorizontalAlignment="Left" />
+                                    <TextBlock Text="{x:Bind customer}" FontSize="15" Margin="10,0"  HorizontalAlignment="Right"/>
+                                    <TextBlock Text="{x:Bind account}" FontSize="20" Margin="0,30" HorizontalAlignment="Left"/>
+                                    <TextBlock Text="{x:Bind amount}" FontSize="20" Margin="20,30" HorizontalAlignment="Right"/>
+                                </Grid>
+                            </DataTemplate>
+                        </GridView.ItemTemplate>
+                        <GridView.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <ItemsWrapGrid Orientation="Vertical" />
+                            </ItemsPanelTemplate>
+                        </GridView.ItemsPanel>
+                    </GridView>
+                </RelativePanel>
+            </PivotItem>
+        </Pivot>
+    </Grid>
+</Page>

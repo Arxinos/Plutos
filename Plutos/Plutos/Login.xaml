@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="Plutos.Login"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Plutos"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="MainWindow" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Orientation="Vertical">
+            <TextBlock x:Uid="/Login/Login" FontSize="36" Margin="0,50,0,20" TextAlignment="Center"/>
+            <TextBox x:Name="EmailTextBox" Margin="0,0,0,10" Width="250" x:Uid="/Login/EMail"/>
+            <PasswordBox x:Name="PWDB" Margin="0,0,0,10" Width="250" x:Uid="/Login/Password" KeyUp="EnterPressed"/>
+            <Button x:Name="PassportSignInButton" x:Uid="/Login/LoginButton" Foreground="Black" Width="100" HorizontalAlignment="Center" Margin="0,20"  Click="LoginUser"/>
+            <TextBlock x:Uid="/Login/NoAccount"
+                TextAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+            <TextBlock x:Name="RegisterButtonTextBlock" x:Uid="/Login/Register"
+               PointerPressed="RegisterUser"
+               Foreground="DodgerBlue"
+               TextAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+        </StackPanel>
+        <ComboBox Name="LanguageBox" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="50" SelectionChanged="ChangeLanguage" Width="150" x:Uid="/Login/Language"/>
+    </Grid>
+</Page>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,6 +23,9 @@ namespace Plutos
     /// </summary>
     sealed partial class App : Application
     {
+        public static int userID;
+        public static int compID;
+        public static ChartData chartData = null;
         /// <summary>
         /// Initialisiert das Singletonanwendungsobjekt. Dies ist die erste Zeile von erstelltem Code
         /// und daher das logische Äquivalent von main() bzw. WinMain().
@@ -31,7 +35,6 @@ namespace Plutos
             this.InitializeComponent();
             this.Suspending += OnSuspending;
         }
-
         /// <summary>
         /// Wird aufgerufen, wenn die Anwendung durch den Endbenutzer normal gestartet wird. Weitere Einstiegspunkte
         /// werden z. B. verwendet, wenn die Anwendung gestartet wird, um eine bestimmte Datei zu öffnen.
@@ -66,9 +69,10 @@ namespace Plutos
                     // Wenn der Navigationsstapel nicht wiederhergestellt wird, zur ersten Seite navigieren
                     // und die neue Seite konfigurieren, indem die erforderlichen Informationen als Navigationsparameter
                     // übergeben werden
-                    rootFrame.Navigate(typeof(MainPage), e.Arguments);
+                    rootFrame.Navigate(typeof(Login), e.Arguments);
                 }
                 // Sicherstellen, dass das aktuelle Fenster aktiv ist
+                rootFrame.CacheSize = 1;
                 Window.Current.Activate();
             }
         }
@@ -93,6 +97,14 @@ namespace Plutos
         private void OnSuspending(object sender, SuspendingEventArgs e)
         {
             var deferral = e.SuspendingOperation.GetDeferral();
+
+            //TODO: Load state from previously suspended application
+
+            SocketMethods.ConnectToServer();
+            SocketMethods.SendMessage("7");
+            SocketMethods.client.Shutdown(System.Net.Sockets.SocketShutdown.Both);
+            SocketMethods.Disconnect();
+
             //TODO: Anwendungszustand speichern und alle Hintergrundaktivitäten beenden
             deferral.Complete();
         }
